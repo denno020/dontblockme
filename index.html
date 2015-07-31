@@ -56,6 +56,19 @@
     
 </head>
 <body>
+    <div id="fb-root"></div>
+    
+    <script>
+        //Facebook
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=335368336562513";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    
     <div class="pre-loader">
         <div class="load-con">
             <img src="img/freeze/logo.png" class="animated fadeInDown" alt="">
@@ -626,6 +639,11 @@
             <p>Need more information?</p>
             <br>
             <p>Feel free to shoot me an email at<br> dontblockmeinfo@gmail.com</p>
+            <p>Spread the word</p>
+            <p>
+                <div class="facebookShareBtn"><img src="/img/share-facebook.jpg" /></div>
+                <div class="fb-share-button" data-href="http://dontblockme.info" data-layout="button"></div>
+            </p>
         </div>
     </div>
 </section>
