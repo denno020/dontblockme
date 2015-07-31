@@ -17,7 +17,8 @@ dontblockme.general = {
         
         $("#add-notice").tooltip();
         
-        $("#contact").on('click', '.facebookShareBtn img', me.handlerClickShareBtn);
+        //Hack to hopefully stop the navbar from staying expanded when the page loads
+        $(window).scrollTop($(window).scrollTop()+1);
     },
     
     /**
@@ -31,17 +32,6 @@ dontblockme.general = {
         while (providers.length) {
             parent.append(providers.splice(Math.floor(Math.random() * providers.length), 1)[0]);
         }
-    },
-    
-    /**
-     * When a user clicks on the large facebook share button, in the background, trigger the normal facebook share button
-     *
-     * @returns {undefined}
-     */
-    handlerClickShareBtn: function(e) {
-        e.preventDefault;
-        console.debug('About to click');
-        $(".fb-share-button").trigger('click');
     }
 };
 
