@@ -1,0 +1,36 @@
+/* 
+    Created on : Jul 15, 2015, 10:36:37 PM
+    Author     : Denno
+    Description: Styles for the website that are either new, or over-write some of the theme styles
+*/
+
+#about div.section-heading h1,
+#about div.section-heading p {
+    color: white;
+}
+
+#youtubeWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+}
+#youtubeWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#features .row + .row {
+    margin-top: 5em;
+}
+
+.providerFeature {
+    font-size: 17px;
+}
+
+#about-heading {
+    text-indent: -9999px;
+}
