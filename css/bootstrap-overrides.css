@@ -1,0 +1,8 @@
+/* 
+    Created on : Jul 28, 2015, 9:49:49 PM
+    Author     : Denno
+    Description: Styles that over-write the default styles in Bootstrap
+*/
+.media:first-child {
+    margin-top: 15px !important;
+}
